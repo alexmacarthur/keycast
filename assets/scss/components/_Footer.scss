@@ -1,0 +1,19 @@
+.Footer {
+  padding: 1rem;
+  color: $gray--dark;
+  text-align: center;
+  position: relative;
+  background: $gray--light;
+
+  a {
+    color: inherit;
+
+    @include media($mobile) {
+      display: block;
+    }
+  }
+
+  @include media($small) {
+    margin-top: 0px;
+  }
+}

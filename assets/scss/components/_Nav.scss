@@ -1,0 +1,71 @@
+.Nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  transition: all .25s ease-in-out;
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgba($turquoise, 0);
+  }
+
+  &.has-scrolled {
+    background: $gray--extraLight;
+
+    &:after {
+      background: rgba($turquoise, 1);
+    }
+  }
+
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-branding {
+    font-weight: 100;
+    opacity: 0;
+    display: flex;
+
+    svg {
+      height: 30px;
+      width: auto;
+    }
+
+    .has-scrolled & {
+      opacity: 1;
+    }
+  }
+
+  &-items {
+    display: flex;
+    align-items: center;
+
+    li {
+      display: inline-block;
+
+      & + li {
+        margin-left: 2rem;
+      }
+    }
+
+    a {
+      color: $gray--dark;
+      font-weight: 100;
+    }
+  }
+}

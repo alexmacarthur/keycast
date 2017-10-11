@@ -1,0 +1,132 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="{{ site.keywords }} ">
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta name="description" content="{{ site.description }}">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400|Raleway:200,300,400,900" as="style" onload="this.rel='stylesheet'">
+    {% include script-loadCSS.html %}
+    {% include script-analytics.html %}
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    {% include prefetch.html %}
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <nav class="Nav" id="nav">
+        <div class="Nav-wrapper">
+          <span class="Nav-branding">{% include svg-logo-triangle.svg %}</span>
+
+          <ul class="Nav-items">
+            <li><a href="{{ site.app_url }}">Sign Up</a></li>
+            <li><a href="{{ site.app_url }}">Sign In</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="Header">
+        <div class="Header-wrapper">
+          <h1 class="Header-title">{% include svg-logo.svg %}</h1>
+          <h2 class="Header-subTitle">Live. Replayable. Blogging.</h2>
+          <a class="Button Button--white Header-button" href="https://keycast.live">Start Casting</a>
+        </div>
+      </header>
+
+      <main>
+
+        <section>
+          <div class="Callout">
+            <h2 class="Callout-title">See how it works.</h2>
+
+            <div class="Callout-iframeWrapper">
+              <div class="Callout-iframe">
+                <iframe width="1470" height="674" src="https://www.youtube.com/embed/rW9MbYQrTUI" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="Callout-container">
+              <a class="Button Callout-button" href="{{ site.app_url }}">
+                Start Casting!
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <ul class="FeatureList">
+            <li class="FeatureList-feature">
+              <i class="FeatureList-icon">
+                {% include svg-binoculars.svg %}
+              </i>
+              <h3>Total transparency down to a single keystroke.</h3>
+              <p>
+                Everything you type is immediately visible to viewers. Typos, Freudian slips, everything else &mdash; if you type it, they'll see it. Unrefind, open, and honest.
+              </p>
+            </li>
+
+            <li class="FeatureList-feature">
+              <i class="FeatureList-icon">
+                {% include svg-video-play.svg %}
+              </i>
+
+              <h3>Replay every cast as if it were the first time.</h3>
+              <p>
+                After casting, you'll be able to replay that cast just as if it were happening live. Pauses, deletions, pace &mdash; it'll all be there, ready to relive at any moment.
+              </p>
+            </li>
+
+            <li class="FeatureList-feature">
+              <i class="FeatureList-icon">
+                {% include svg-fingerprint.svg %}
+              </i>
+              <h3>Make your thoughts come to life like never before.</h3>
+              <p>
+                Unlike traditional content creation, KeyCast preserves the personality that drives content, bringing a new level of humanity to every piece that's published.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="Callout">
+            <a class="Button Callout-button" href="{{ site.app_url }}">
+              Start Casting!
+            </a>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="Footer">
+        &copy; 2017 // Created by <a href="https://macarthur.me/">Alex MacArthur</a>
+      </footer>
+
+    </div>
+
+    <script>
+      {% include script-main.js %}
+    </script>
+
+  </body>
+
+</html>

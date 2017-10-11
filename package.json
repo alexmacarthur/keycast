@@ -1,0 +1,28 @@
+{
+  "name": "keycast-marketing",
+  "version": "0.0.0",
+  "main": "index.html",
+  "author": "Alex MacArthur",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && jekyll build && node_modules/html-minifier/cli.js _site/index.html -o _site/index.html --collapse-whitespace",
+    "jekyll": "cross-env concurrently --kill-others \"yarn run watch\" \"jekyll build --watch\""
+  },
+  "devDependencies": {
+    "babili-webpack-plugin": "^0.1.2",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "concurrently": "^3.5.0",
+    "cross-env": "^5.0.5",
+    "html-minify": "^0.3.2",
+    "laravel-mix": "^1.4.2"
+  },
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "global": "^4.3.2",
+    "lodash.debounce": "^4.0.8",
+    "normalize.css": "^7.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+.Button {
+  position: relative;
+  border-radius: $base-border-radius;
+  color: $gray--dark;
+  padding: .5rem 2rem;
+  border: 2px solid $gray--dark;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all .15s ease-in-out;
+
+  svg {
+    height: 15px;
+    width: 10px;
+  }
+
+  &:hover {
+    color: $white;
+    background: $turquoise;
+  }
+
+  &--white {
+    color: $white;
+    border-color: $white;
+
+    &:hover {
+      color: $turquoise;
+      background: $white;
+    }
+  }
+}

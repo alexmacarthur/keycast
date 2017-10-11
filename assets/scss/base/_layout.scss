@@ -1,0 +1,40 @@
+html,
+body {
+  min-height: 100%;
+  background: $gray--extraLight;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+body,
+#wrapper {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section {
+  text-align: center;
+  margin-bottom: 5rem;
+
+  &:last-child {
+    @include media($small) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &:nth-child(2n) {
+    background: linear-gradient(to bottom right, darken($gray--extraLight, 2%), darken($gray--extraLight, 4%));
+  }
+
+  & + & {
+    margin-top: 2rem;
+  }
+}
