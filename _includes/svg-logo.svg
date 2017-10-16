@@ -51,7 +51,7 @@
         c2.451,1.729,5.127,2.593,8.028,2.593c1.895,0,3.679-0.193,5.352-0.586c1.672-0.389,3.148-0.836,4.432-1.338
         c1.281-0.502,2.284-0.975,3.011-1.422c0.724-0.443,1.142-0.724,1.254-0.836L732.55,214.008z"/>
     </g>
-    <path id="arrow" fill="none" stroke="#ffffff" stroke-width="8" stroke-miterlimit="10" d="M596.889,173.139l-70.432,40.594
+    <path id="arrow" fill="none" stroke="#ffffff" stroke-width="6" stroke-miterlimit="10" d="M596.889,173.139l-70.432,40.594
       v-81.191L596.889,173.139z"/>
     <text id="keyc_st_1_" transform="matrix(1 0 0 1 119.7383 217.9404)" display="none" fill="#ffffff" enable-background="new    " font-family="'Raleway-Thin'" font-size="167.2484">keyc </text>
     <text transform="matrix(1 0 0 1 574.6113 218.0215)" display="none" fill="#ffffff" font-family="'Raleway-Thin'" font-size="167.2484">st</text>
