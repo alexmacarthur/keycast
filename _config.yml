@@ -14,11 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: keycast | live. replayable. blogging
+title: keycast | live, replayable blogging.
+description: Keycast enables you to broadcast your thoughts as they happen, key by key.
 email: alex@macarthur.me
 exclude: [node_modules, mix-manifest.json, webpack.mix.js, yarn.lock, Gemfile, Gemfile.lock, package.json, assets/scss]
+url: https://try.keycast.live
 app_url: https://keycast.live
-tagline: A live, replayble, key-by-key blogging platform.
 
 # Build settings
 markdown: kramdown
