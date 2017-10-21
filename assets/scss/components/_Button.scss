@@ -27,4 +27,15 @@
       background: $white;
     }
   }
+
+  &--dark {
+    &:hover {
+      background: $gray--dark;
+    }
+  }
+
+  &--narrow {
+    padding: .25rem 1rem;
+    border-width: 1px;
+  }
 }
